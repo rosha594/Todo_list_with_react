@@ -35,22 +35,16 @@ function App() {
 
   return (
     <div className="App">
-      <h1>To DO List !</h1>
-      <form>
-        <FormControl>
-          <InputLabel>Adding Todos !</InputLabel>
-          <Input
-            label="Enter your new task !"
-            variant="filled"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-          />
-        </FormControl>
-        <Button
-          type="submit"
-          onClick={addTodo}
-          variant="contained"
-          disabled={!input}
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          rohan
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Add Task
         </Button>
